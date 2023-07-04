@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="workPre.ico" type="icon">
+    <script src="workPeriod.js" defer></script>
+    <title>Work Period</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title"><h2><span>newmont</span><br>work Period checker</h2></div>
+        <div id="content">
+
+        
+            <div id="input">
+                
+                    <div id="dateCon">
+                        <label for="date">Date you want to check</label><br>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div id="periodCon">
+                        <label>Your current work Period</label><br>
+                        <select id="periods">
+                            <option value="morning">Morning</option>
+                            <option value="evening">Evening</option>
+                            <option value="off">Off</option>
+                        </select>
+
+                        <select name="periodNum" id="periodNum">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div id="btn"><button type="submit"  onclick="display()">check</button></div>
+            
+            </div>
+
+            <div id="result">
+                <div id="resultDate"></div>
+                <div id="day"></div>
+                <div id="resultPeriod"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
